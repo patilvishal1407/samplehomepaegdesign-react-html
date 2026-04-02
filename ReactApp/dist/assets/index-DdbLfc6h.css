@@ -1,0 +1,408 @@
+:root {
+    --blue-900: #062e76;
+    --blue-800: #0f479f;
+    --blue-700: #1f63c9;
+    --blue-100: #eaf3ff;
+    --ink: #20273a;
+    --muted: #6d7488
+}
+
+* {
+    box-sizing: border-box
+}
+
+body {
+    margin: 0;
+    font-family: DM Sans, sans-serif;
+    color: var(--ink);
+    background: #fff
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+    margin: 0
+}
+
+.site-header {
+    border-bottom: 1px solid #edf1f7;
+    position: sticky;
+    top: 0;
+    z-index: 20
+}
+
+.brand-logo {
+    font-weight: 800;
+    color: var(--blue-700);
+    text-decoration: none
+}
+
+.nav-link {
+    color: #49536a;
+    font-size: .94rem
+}
+
+.hero-section {
+    padding: 2.4rem 0 1.6rem
+}
+
+.hero-overline {
+    font-size: 1.05rem;
+    color: #506082
+}
+
+.hero-title {
+    font-size: clamp(2rem, 4.7vw, 3.8rem);
+    line-height: 1;
+    font-weight: 800;
+    color: var(--blue-900)
+}
+
+.hero-title span {
+    display: block
+}
+
+.hero-text {
+    color: var(--muted);
+    max-width: 500px;
+    margin-top: .9rem
+}
+
+.hero-art {
+    border-radius: 0 0 0 90px;
+    overflow: hidden;
+    position: relative;
+    background: linear-gradient(140deg, #8ec7ff, #3e84de)
+}
+
+.hero-art:after {
+    content: "";
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background: #ffffff4d;
+    bottom: -60px;
+    right: -40px
+}
+
+.hero-image {
+    display: block;
+    width: 100%;
+    transition: transform .35s ease
+}
+
+.hero-image:hover {
+    transform: scale(1.03)
+}
+
+.impact-section {
+    padding: 2.4rem 0 4.5rem;
+    color: #fff;
+    background-image: linear-gradient(#0a101cc7, #0a101cc7), url(https://via.placeholder.com/1600x500/2b2f34/ffffff?text=Citizens+Background);
+    background-size: cover;
+    background-position: center
+}
+
+.impact-section h2 {
+    font-size: clamp(2.1rem, 6vw, 3.7rem);
+    font-weight: 700
+}
+
+.impact-meta {
+    display: flex;
+    gap: 1.2rem;
+    margin-top: .5rem;
+    color: #c6d5ea
+}
+
+.problem-section {
+    margin-top: -2.5rem;
+    padding-bottom: 3.2rem
+}
+
+.problem-wrap {
+    background: #fff;
+    border-radius: 18px;
+    padding: 1rem
+}
+
+.problem-card {
+    border-radius: 16px;
+    padding: 1rem;
+    height: 100%;
+    transition: transform .25s ease, box-shadow .25s ease
+}
+
+.problem-card:hover,
+.quote-card:hover,
+.latest-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 16px 24px -18px #102345b3
+}
+
+.white-card {
+    border: 1px solid #e5ecf8;
+    background: #fff
+}
+
+.white-card .kicker {
+    color: #647089
+}
+
+.white-card h3 {
+    margin: .45rem 0 1rem;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: .95
+}
+
+.mini-pills {
+    display: flex;
+    flex-direction: column;
+    gap: .45rem
+}
+
+.mini-pills span {
+    border: 1px solid #d8e5fb;
+    border-radius: 999px;
+    padding: .35rem .7rem;
+    color: #345086;
+    font-size: .84rem;
+    background: #f8fbff
+}
+
+.blue-card {
+    background: linear-gradient(145deg, #2f8ef0, #1b63c6);
+    color: #fff
+}
+
+.blue-card h3 {
+    font-size: 2rem;
+    font-weight: 700
+}
+
+.blue-card p {
+    color: #d3e8ff;
+    margin-bottom: .8rem
+}
+
+.sustain-section {
+    padding: 1.1rem 0 3rem
+}
+
+.section-kicker {
+    color: #5874a7;
+    font-weight: 700
+}
+
+.sustain-section h2 {
+    text-transform: lowercase;
+    font-size: clamp(1.8rem, 4vw, 2.8rem);
+    font-weight: 700;
+    color: #173b77
+}
+
+.quote-card {
+    border: 1px solid #e4edf8;
+    border-radius: 16px;
+    padding: .7rem;
+    transition: transform .25s ease, box-shadow .25s ease
+}
+
+.quote-card p {
+    margin-top: .65rem;
+    color: #5b6377;
+    font-size: .92rem
+}
+
+.digit-section {
+    padding: 2.6rem 0;
+    color: #fff;
+    background: linear-gradient(135deg, #022764, #0641a0)
+}
+
+.digit-section h2 {
+    font-size: clamp(1.7rem, 3.8vw, 2.8rem);
+    font-weight: 700
+}
+
+.digit-section p {
+    color: #d5e5ff;
+    margin: .7rem 0 1.1rem
+}
+
+.digit-image {
+    border-radius: 140px 0 0 140px;
+    width: 100%
+}
+
+.latest-section {
+    padding: 3rem 0;
+    background: #f7fbff
+}
+
+.latest-section h2,
+.supporter-section h2 {
+    color: #173b77;
+    font-weight: 700
+}
+
+.pill-link {
+    text-decoration: none;
+    color: var(--blue-700);
+    border: 1px solid #c9dcfa;
+    border-radius: 999px;
+    padding: .4rem .95rem;
+    font-size: .9rem
+}
+
+.filter-row {
+    display: grid;
+    grid-template-columns: 1fr 220px;
+    gap: .5rem
+}
+
+.result-meta {
+    color: #5e6f92;
+    font-size: .84rem
+}
+
+.latest-card {
+    background: #fff;
+    border: 1px solid #dfebfb;
+    border-radius: 14px;
+    padding: .75rem;
+    transition: transform .25s ease, box-shadow .25s ease
+}
+
+.card-tag {
+    color: #3d6db6;
+    font-size: .8rem;
+    margin-bottom: .3rem
+}
+
+.latest-card h3 {
+    font-size: 1rem;
+    color: #253553;
+    line-height: 1.3;
+    margin-bottom: .4rem
+}
+
+.latest-card p,
+.empty-state p,
+.loading-state p {
+    color: var(--muted)
+}
+
+.empty-state,
+.loading-state {
+    border: 1px dashed #ced9ec;
+    border-radius: 16px;
+    background: #fff
+}
+
+.supporter-section {
+    padding: 2.8rem 0
+}
+
+.supporter-logos {
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    gap: .7rem
+}
+
+.supporter-logos span {
+    border: 1px solid #d9e8fd;
+    border-radius: 999px;
+    text-align: center;
+    font-size: .82rem;
+    color: #5f7196;
+    padding: .5rem .4rem
+}
+
+.site-footer {
+    padding: 2.5rem 0 2rem;
+    background: #e7f0fa
+}
+
+.site-footer h4 {
+    font-size: 1rem;
+    color: #22447e;
+    margin-bottom: .6rem
+}
+
+.site-footer a {
+    display: block;
+    color: #536a96;
+    text-decoration: none;
+    margin-bottom: .25rem;
+    font-size: .92rem
+}
+
+.site-footer a:hover {
+    color: #204a8f
+}
+
+.footer-copy {
+    color: #5d6c8c
+}
+
+.subscribe-box {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    overflow: hidden;
+    border-radius: 999px;
+    background: #fff;
+    border: 1px solid #cadaf5
+}
+
+.subscribe-box input {
+    border: 0;
+    padding: .62rem .85rem;
+    font-size: .9rem;
+    outline: none
+}
+
+.subscribe-box button {
+    border: 0;
+    background: #ff9d37;
+    color: #fff;
+    padding: .62rem 1rem
+}
+
+@media (max-width: 991.98px) {
+    .hero-section {
+        padding-top: 1.5rem
+    }
+
+    .digit-image {
+        border-radius: 18px
+    }
+
+    .supporter-logos {
+        grid-template-columns: repeat(3, minmax(0, 1fr))
+    }
+}
+
+@media (max-width: 767.98px) {
+    .impact-meta {
+        flex-direction: column;
+        gap: .3rem
+    }
+
+    .problem-section {
+        margin-top: -1.8rem
+    }
+
+    .filter-row {
+        grid-template-columns: 1fr
+    }
+
+    .supporter-logos {
+        grid-template-columns: repeat(2, minmax(0, 1fr))
+    }
+}
